@@ -1,6 +1,6 @@
 # 🚀 ContractClarity — 对簿AI
 
-### AI-Powered Deep Contract Risk Intelligence Engine
+### AI-Powered Contract Risk Intelligence, Strategic Negotiation & Automated Revision Engine
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python" />
