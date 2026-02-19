@@ -1,6 +1,6 @@
 # 🚀 ContractClarity — 对簿AI
 
-### Transforming contract review from manual risk scanning into structured AI-powered legal intelligence.
+### AI-Powered Deep Contract Risk Intelligence Engine
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python" />
