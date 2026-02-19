@@ -385,21 +385,9 @@ Generates:
 ## 🚀 Future Roadmap
 
 * Multi-jurisdiction legal system support
-* PDF & DOCX contract ingestion
 * Docker deployment
 * Frontend migration to React
-* User authentication system
 * SaaS deployment version
-
----
-
-## 📌 Design Philosophy
-
-ContractClarity is built under three principles:
-
-1. Legal grounding over hallucinated reasoning
-2. Structured output over verbose text
-3. Practical negotiation utility over abstract explanation
 
 ---
 
