@@ -1,0 +1,12 @@
+flask
+flask-cors
+langchain-openai
+langchain-chroma
+langchain-huggingface
+langchain_community
+sentence-transformers
+mammoth
+flask-sqlalchemy 
+flask-bcrypt 
+PyJWT
+bcrypt
