@@ -120,8 +120,11 @@ Clause-level risk highlighting directly inside the contract body.
 ### 🔬 Deep Risk Detail Analysis
 
 <p align="center">
-  <img src="assets/risk-detail-analysis-1.png" width="48%">
-  <img src="assets/risk-detail-analysis-2.png" width="48%">
+  <img src="assets/risk-detail-analysis-1.png" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/risk-detail-analysis-2.png" width="900">
 </p>
 
 Each high-risk issue includes:
@@ -165,8 +168,11 @@ Produces professional negotiation emails grounded in legal reasoning.
 ### 📜 Full Contract Revision
 
 <p align="center">
-  <img src="assets/contract-revision-full-text.png" width="48%">
-  <img src="assets/contract-revision-notes.png" width="48%">
+  <img src="assets/contract-revision-full-text.png" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/contract-revision-notes.png" width="900">
 </p>
 
 Provides:
