@@ -15,17 +15,22 @@
 
 ## 📖 Overview
 
-**ContractClarity** is a production-oriented AI LegalTech system designed to perform deep contract risk intelligence rather than simple surface-level clause summarization.
+**ContractClarity** is a production-oriented AI LegalTech platform designed to transform contract review into structured, law-grounded intelligence.
 
-It integrates:
+Built for both legal professionals and non-legal users, the system leverages Retrieval-Augmented Generation (RAG) integrated with domain-specific legal databases to deliver:
 
-* 🔍 Retrieval-Augmented Generation (RAG)
-* 📚 Domain-specific legal vector database
-* 🧠 Multi-stage LLM reasoning
-* ⚖️ Structured legal-grounded analysis
-* 🤝 Negotiation strategy automation
+- 🔍 Deep structural risk auditing  
+- ⚠️ Quantitative contract risk scoring  
+- 📚 Clause-level legal grounding  
+- 🧠 Strategic negotiation modeling  
+- ⚖️ Automated full-text contract revision  
 
-This system moves beyond “chatbot-style contract explanation” and delivers structured legal risk intelligence, quantitative scoring, and strategic negotiation guidance.
+Unlike generic LLM tools that provide surface-level explanations, ContractClarity performs multi-stage legal reasoning to identify unfair clauses, hidden liabilities, and asymmetric risk structures.
+
+From a user perspective, the platform not only detects legal pitfalls but also generates actionable negotiation strategies. It provides structured, multi-style negotiation scripts — **assertive**, **compromising**, and **conciliatory** — tailored for both phone and written communication.
+
+By combining legal retrieval, structured AI reasoning, and strategic modeling, ContractClarity empowers users to protect their interests and negotiate more favorable contractual terms.
+
 
 ## ❓ Why ContractClarity?
 
