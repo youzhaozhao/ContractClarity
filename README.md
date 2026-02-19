@@ -27,64 +27,178 @@ It integrates:
 
 This system moves beyond “chatbot-style contract explanation” and delivers structured legal risk intelligence, quantitative scoring, and strategic negotiation guidance.
 
+
 ---
+
 
 ## 🖥 Product Interface
 
-### 🏠 Contract Input Interface
+---
+
+### 🔐 Authentication & Entry
 
 <p align="center">
-  <img src="assets/demo_home.png" width="900">
+  <img src="assets/contract-review-homepage.png" width="48%">
+  <img src="assets/login-modal-verification-code.png" width="48%">
 </p>
 
-Users can:
-
-* Paste full contract text
-* Select contract category (e.g., Labor, Commercial, Service)
-* Trigger deep risk audit
+Users securely access the platform via verification-code login.
+The homepage introduces the AI-powered contract intelligence workflow.
 
 ---
 
-### 🔎 Risk Analysis Dashboard
+### 📂 Contract Type Selection
 
 <p align="center">
-  <img src="assets/demo_analysis.png" width="900">
+  <img src="assets/contract-type-selection-english.png" width="48%">
+  <img src="assets/contract-type-details-expanded.png" width="48%">
 </p>
 
-The engine returns:
-
-* Contract type classification
-* Jurisdiction inference
-* Risk severity (Low / Medium / High)
-* Quantified risk score (0–100)
-* 5–7 critical high-risk issues
-* Cited legal provisions
-* Structured mitigation recommendations
+Users select the appropriate contract category to activate specialized legal knowledge routing.
 
 ---
 
-### ✉️ AI Negotiation Strategy Generator
+### 📄 Contract Upload & Submission
 
 <p align="center">
-  <img src="assets/demo_negotiation.png" width="900">
+  <img src="assets/contract-upload-page.png" width="900">
 </p>
 
-Generates:
+Supports structured contract upload and text-based submission.
 
-* 500+ word professional negotiation email
-* Structured argumentation framework
-* Multi-style strategies:
+---
 
-  * Aggressive
-  * Consultative
-  * Compromise-driven
+### ⚙️ AI Review Processing
+
+<p align="center">
+  <img src="assets/ai-review-processing.png" width="900">
+</p>
+
+The system performs:
+
+* Legal retrieval (RAG)
+* Clause-level semantic parsing
+* Multi-stage risk reasoning
+* Quantitative scoring
+
+---
+
+## 🔎 Risk Intelligence Dashboard
+
+---
+
+### 📊 Overall Risk Overview
+
+<p align="center">
+  <img src="assets/risk-overview-report.png" width="900">
+</p>
+
+Provides:
+
+* Risk severity level
+* Risk score (0–100)
+* Core high-risk factors
+* Legal basis references
+
+---
+
+### 📝 Contract Risk Highlighting
+
+<p align="center">
+  <img src="assets/contract-text-with-risk-highlights.png" width="900">
+</p>
+
+Clause-level risk highlighting directly inside the contract body.
+
+---
+
+### 🔬 Deep Risk Detail Analysis
+
+<p align="center">
+  <img src="assets/risk-detail-analysis-1.png" width="48%">
+  <img src="assets/risk-detail-analysis-2.png" width="48%">
+</p>
+
+Each high-risk issue includes:
+
+* Legal interpretation
+* Liability explanation
+* Practical impact
+* Mitigation suggestions
+
+---
+
+## ✉️ AI Negotiation Strategy Generator
+
+---
+
+### 📞 Phone Script & Multi-Style Strategy
+
+<p align="center">
+  <img src="assets/negotiation-strategy-phone-script.png" width="48%">
+  <img src="assets/negotiation-strategy-multiple-styles.png" width="48%">
+</p>
+
+Automatically generates:
+
+* Structured negotiation talking points
+* Aggressive / Consultative / Compromise styles
+
+---
+
+### 📧 Written Communication Templates
+
+<p align="center">
+  <img src="assets/written-communication-email-template.png" width="900">
+</p>
+
+Produces 500+ word professional negotiation emails grounded in legal reasoning.
+
+---
+
+## 🛠 Contract Revision Engine
+
+---
+
+### 📜 Full Contract Revision
+
+<p align="center">
+  <img src="assets/contract-revision-full-text.png" width="48%">
+  <img src="assets/contract-revision-notes.png" width="48%">
+</p>
+
+Provides:
+
+* Full revised contract draft
+* Inline modification notes
+* Risk-justified adjustments
+
+---
+
+## 📁 User Dashboard & Archive
+
+---
+
+### 🧾 Contract Management System
+
+<p align="center">
+  <img src="assets/user-dashboard-overview.png" width="48%">
+  <img src="assets/user-contract-archive-detail.png" width="48%">
+</p>
+
+Includes:
+
+* Historical contract archive
+* Review status tracking
+* Risk score comparison
+* Structured report retrieval
 
 ---
 
 ## 🧠 System Architecture
 
 <p align="center">
-  <img src="assets/architecture.png" width="850">
+  <img src="assets/System Architecture Diagram.png" width="850">
 </p>
 
 ### Pipeline Flow
