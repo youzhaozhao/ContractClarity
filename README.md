@@ -1,35 +1,31 @@
-# 🚀 ContractClarity - 对簿AI
+# 🚀 ContractClarity — 对簿AI
 
 ### AI-Powered Deep Contract Risk Intelligence Engine
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python " />
-  <img src="https://img.shields.io/badge/Flask-Backend-black?style=for-the-badge&logo=flask " />
-  <img src="https://img.shields.io/badge/LLM-DeepSeek-red?style=for-the-badge " />
-  <img src="https://img.shields.io/badge/VectorDB-Chroma-green?style=for-the-badge " />
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge " />
+  <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/Flask-Backend-black?style=for-the-badge&logo=flask" />
+  <img src="https://img.shields.io/badge/LLM-DeepSeek-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/VectorDB-Chroma-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/RAG-Legal%20Reasoning-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
 </p>
 
 ---
 
 ## 📖 Overview
 
-**ContractClarity** is an AI-driven legal contract analysis engine that performs:
+**ContractClarity** is a production-oriented AI LegalTech system designed to perform deep contract risk intelligence rather than simple surface-level clause summarization.
 
-* Deep structural risk auditing
-* Law-grounded clause validation
-* Quantitative risk scoring
-* Negotiation strategy generation
-* Multi-style persuasion scripting
-
-It combines:
+It integrates:
 
 * 🔍 Retrieval-Augmented Generation (RAG)
-* 📚 Domain-specific legal vector databases
+* 📚 Domain-specific legal vector database
 * 🧠 Multi-stage LLM reasoning
-* ⚖️ Structured legal intelligence output
+* ⚖️ Structured legal-grounded analysis
+* 🤝 Negotiation strategy automation
 
-Designed as a practical AI LegalTech system rather than a demo chatbot.
+This system moves beyond “chatbot-style contract explanation” and delivers structured legal risk intelligence, quantitative scoring, and strategic negotiation guidance.
 
 ---
 
@@ -38,62 +34,78 @@ Designed as a practical AI LegalTech system rather than a demo chatbot.
 ### 🏠 Contract Input Interface
 
 <p align="center">
-  <img src="assets/demo_home.png" width="800">
+  <img src="assets/demo_home.png" width="900">
 </p>
 
-Users paste contract content and select a contract category.
+Users can:
+
+* Paste full contract text
+* Select contract category (e.g., Labor, Commercial, Service)
+* Trigger deep risk audit
 
 ---
 
 ### 🔎 Risk Analysis Dashboard
 
 <p align="center">
-  <img src="assets/demo_analysis.png" width="800">
+  <img src="assets/demo_analysis.png" width="900">
 </p>
 
-The system returns:
+The engine returns:
 
 * Contract type classification
 * Jurisdiction inference
-* Overall risk level
+* Risk severity (Low / Medium / High)
 * Quantified risk score (0–100)
-* 5–7 core high-risk issues
-* Legal references
-* Defensive revision suggestions
+* 5–7 critical high-risk issues
+* Cited legal provisions
+* Structured mitigation recommendations
 
 ---
 
 ### ✉️ AI Negotiation Strategy Generator
 
 <p align="center">
-  <img src="assets/demo_negotiation.png" width="800">
+  <img src="assets/demo_negotiation.png" width="900">
 </p>
 
-Automatically generates:
+Generates:
 
 * 500+ word professional negotiation email
-* Structured persuasion script
-* Aggressive / Consultative / Compromise strategy styles
+* Structured argumentation framework
+* Multi-style strategies:
+
+  * Aggressive
+  * Consultative
+  * Compromise-driven
 
 ---
 
 ## 🧠 System Architecture
 
 <p align="center">
-  <img src="assets/architecture.png" width="700">
+  <img src="assets/architecture.png" width="850">
 </p>
 
-**Pipeline Flow**
+### Pipeline Flow
 
-1. User submits contract
-2. Flask API creates async task
-3. Relevant laws retrieved from Chroma vector database
-4. DeepSeek LLM performs:
-
-   * Risk auditing
-   * Legal grounding
-   * Negotiation planning
-5. Structured JSON response returned
+```
+User Input
+   ↓
+Frontend (HTML UI)
+   ↓
+Flask Backend (app.py)
+   ↓
+Category Router
+   ↓
+Chroma Vector DB (Legal Corpus)
+   ↓
+Embedding Model (bge-large-zh-v1.5)
+   ↓
+DeepSeek LLM
+   ↓
+Structured JSON Response
+```
 
 ---
 
@@ -103,61 +115,37 @@ Automatically generates:
 ContractClarity/
 │
 ├── backend/
-│   ├── app.py              # Core analysis engine
-│   ├── ingest.py           # Legal corpus vectorization
-│   └── .env.example
+│   ├── app.py                # Core Flask API
+│   ├── ingest.py             # Legal corpus vectorization
+│   ├── .env.example
 │
 ├── frontend/
-│   └── index.html
+│   └── index.html            # UI Interface
 │
-├── laws/
-│   └── 法律条文/
+├── data/
+│   └── 法律条文/   # Categorized legal documents
 │
-├── assets/
-│   ├── demo_home.png
-│   ├── demo_analysis.png
-│   ├── demo_negotiation.png
-│   └── architecture.png
+├── assets/...
 │
 ├── requirements.txt
-└── README.md
+├── README.md
+└── LICENSE
 ```
-System Architecture Diagram:
-```
-User
-  ↓
-Frontend (index.html)
-  ↓
-Flask/FastAPI Backend (app.py)
-  ↓
-Category Router
-  ↓
-Chroma Vector DB (per category)
-  ↓
-HuggingFace Embeddings (bge-large-zh-v1.5)
-  ↓
-LLM (Chat Model)
-  ↓
-Answer + Cited Legal Articles
-```
-<p align="center">
-  <img src="assets/System Architecture Diagram.png" width="800">
-</p>
 
 ---
 
 ## ⚙️ Installation
 
-### 1️⃣ Clone the repository
+### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/ContractClarity.git 
+git clone https://github.com/yourusername/ContractClarity.git
 cd ContractClarity
 ```
 
 ---
 
-### 2️⃣ Install dependencies
+### 2️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -165,9 +153,15 @@ pip install -r requirements.txt
 
 ---
 
-### 3️⃣ Configure environment variables
+### 3️⃣ Configure Environment Variables
 
-Create `.env` inside `/backend/`:
+Create:
+
+```
+backend/.env
+```
+
+Add:
 
 ```env
 DEEPSEEK_API_KEY=your_api_key_here
@@ -184,13 +178,13 @@ python ingest.py
 
 ---
 
-### 5️⃣ Run Backend Server
+### 5️⃣ Run Server
 
 ```bash
 python app.py
 ```
 
-Runs on:
+Server runs at:
 
 ```
 http://localhost:5000
@@ -202,6 +196,8 @@ http://localhost:5000
 
 ### POST `/analyze`
 
+Request:
+
 ```json
 {
   "text": "contract content",
@@ -209,7 +205,7 @@ http://localhost:5000
 }
 ```
 
-Returns:
+Response:
 
 ```json
 {
@@ -221,37 +217,44 @@ Returns:
 
 ### GET `/status/<task_id>`
 
-Returns analysis result or progress state.
+Returns:
+
+```json
+{
+  "status": "completed",
+  "overallRisk": "High",
+  "riskScore": 82,
+  "issues": [...]
+}
+```
 
 ---
 
-## 🎯 Core Features
+## 🎯 Core Capabilities
 
-### 🔍 Deep Risk Detection
+### 🔍 Deep Structural Risk Auditing
 
-* Identifies hidden liability asymmetry
-* Detects clause omissions
-* Flags regulatory violations
-
----
-
-### ⚖️ Law-Grounded Intelligence
-
-Retrieves relevant legal references from:
-
-* Categorized Chinese legal corpus
-* Vector similarity search
-* Embedding model: BAAI/bge-large-zh-v1.5
+* Liability asymmetry detection
+* Missing clause identification
+* Regulatory compliance checks
 
 ---
 
-### 📊 Structured Risk Quantification
+### ⚖️ Law-Grounded Retrieval
 
-Generates:
+* Category-based vector search
+* Embedding model: `BAAI/bge-large-zh-v1.5`
+* Similarity-based legal citation
 
-* overallRisk
-* riskScore (0–100)
-* severity classification
+---
+
+### 📊 Quantitative Risk Scoring
+
+Produces:
+
+* `overallRisk`
+* `riskScore`
+* Severity breakdown
 
 ---
 
@@ -259,19 +262,30 @@ Generates:
 
 Generates:
 
-* Professional negotiation email (500+ words)
+* Formal legal emails
 * Strategic persuasion scripts
-* Multi-style negotiation approaches
+* Multi-style negotiation pathways
 
 ---
 
-## 🚀 Future Improvements
+## 🚀 Future Roadmap
 
-* Support multi-jurisdiction legal systems
-* Add PDF contract parsing
-* Deploy Dockerized version
-* Add user authentication layer
-* Frontend upgrade to React
+* Multi-jurisdiction legal system support
+* PDF & DOCX contract ingestion
+* Docker deployment
+* Frontend migration to React
+* User authentication system
+* SaaS deployment version
+
+---
+
+## 📌 Design Philosophy
+
+ContractClarity is built under three principles:
+
+1. Legal grounding over hallucinated reasoning
+2. Structured output over verbose text
+3. Practical negotiation utility over abstract explanation
 
 ---
 
