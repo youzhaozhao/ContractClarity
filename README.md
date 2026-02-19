@@ -58,49 +58,31 @@ Generic LLM tools provide explanations but often:
 ## 🖥 Product Interface
 
 
-### 🏠 Access & Contract Initialization
+### 🏠 Homepage 
+<p align="center"> 
+  <img src="assets/contract-review-homepage.png" width="900"> 
+</p> 
+
+Users can select the system language, register, log in, and choose the contract type on the homepage. 
+
+### 🔐 Contract Type Selection & Authentication 
+<p align="center"> 
+  <img src="assets/contract-type-details-expanded.png" width="48%"> 
+  <img src="assets/login-modal-verification-code.png" width="48%"> 
+</p> 
+
+Users select the appropriate contract category to activate specialized legal knowledge routing and can securely access the platform via verification code login or account password login.
+
+### 📄 Contract Upload & AI Review Processing
 
 <p align="center">
-  <img src="assets/contract-review-homepage.png" width="900">
-</p>
-
-Users can select the system language, register, log in, and choose the contract type on the homepage.
-
-<p align="center">
-  <img src="assets/contract-type-details-expanded.png" width="900">
-</p>
-
-Users select specialized contract categories to activate domain-specific legal routing.
-
-
-<p align="center">
-  <img src="assets/login-modal-verification-code.png" width="900">
-</p>
-
-Secure login via:
-
-- Verification code (OTP)
-- Account & password
-- JWT-based session management
-
-
-### 📄 Contract Upload & Submission
-
-<p align="center">
-  <img src="assets/contract-upload-page.png" width="900">
+  <img src="assets/contract-upload-page.png" width="48%">
+  <img src="assets/ai-review-processing.png" width="48%">
 </p>
 
 Supports contract upload (PDF, TXT, DOC, images) and text paste submission.
 
-
-### ⚙️ AI Review Processing
-
-<p align="center">
-  <img src="assets/ai-review-processing.png" width="900">
-</p>
-
 The system performs:
-
 * Legal retrieval (RAG)
 * Clause-level semantic parsing
 * Multi-stage risk reasoning
