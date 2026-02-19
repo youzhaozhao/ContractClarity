@@ -1,4 +1,4 @@
-# 🚀 ContractClarity — 对簿AI
+# 🚀 ContractClarity — 对簿AI 智能合同审查平台 v1.0
 
 ### AI-Powered Contract Risk Intelligence, Strategic Negotiation & Automated Revision Engine
 
