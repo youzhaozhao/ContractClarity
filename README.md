@@ -1,6 +1,6 @@
 # 🚀 ContractClarity — 对簿AI
 
-### AI-Powered Deep Contract Risk Intelligence Engine
+### Transforming contract review from manual risk scanning into structured AI-powered legal intelligence.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python" />
@@ -27,15 +27,33 @@ It integrates:
 
 This system moves beyond “chatbot-style contract explanation” and delivers structured legal risk intelligence, quantitative scoring, and strategic negotiation guidance.
 
+## ❓ Why ContractClarity?
+
+Traditional contract review is:
+
+- Time-consuming and manually intensive
+- Dependent on individual legal expertise
+- Inaccessible for SMEs without legal counsel
+- Vulnerable to oversight in high-volume reviews
+- Not structured for measurable risk assessment
+
+Generic LLM tools provide explanations but often:
+
+- Lack legal grounding
+- Hallucinate regulatory references
+- Fail to produce structured outputs
+- Cannot quantify contract risk
+
+**ContractClarity bridges this gap** by combining domain-specific legal retrieval with structured AI reasoning and negotiation intelligence.
+
 
 ---
 
 
 ## 🖥 Product Interface
 
----
 
-### 🔐 Homepage
+### 🏠 Access & Contract Initialization
 
 <p align="center">
   <img src="assets/contract-review-homepage.png" width="900">
@@ -43,19 +61,23 @@ This system moves beyond “chatbot-style contract explanation” and delivers s
 
 Users can select the system language, register, log in, and choose the contract type on the homepage.
 
----
-
-### 📂🔐 Contract Type Selection & Authentication
-
 <p align="center">
-  <img src="assets/contract-type-details-expanded.png" width="48%">
-  <img src="assets/login-modal-verification-code.png" width="48%">
+  <img src="assets/contract-type-details-expanded.png" width="900">
 </p>
 
-Users select the appropriate contract category to activate specialized legal knowledge routing.
-Users can securely access the platform via verification code login or account password login.
+Users select specialized contract categories to activate domain-specific legal routing.
 
----
+
+<p align="center">
+  <img src="assets/login-modal-verification-code.png" width="900">
+</p>
+
+Secure login via:
+
+- Verification code (OTP)
+- Account & password
+- JWT-based session management
+
 
 ### 📄 Contract Upload & Submission
 
@@ -65,7 +87,6 @@ Users can securely access the platform via verification code login or account pa
 
 Supports contract upload (PDF, TXT, DOC, images) and text paste submission.
 
----
 
 ### ⚙️ AI Review Processing
 
@@ -82,11 +103,9 @@ The system performs:
 * Complete Contract Revision
 * Quantitative scoring
 
----
 
 ## 🔎 Risk Intelligence Dashboard
 
----
 
 ### 📊 Overall Risk Overview
 
@@ -98,12 +117,9 @@ Provides:
 
 * Risk severity level
 * Risk score (0–100)
-* Core high-risk factors
-* Legal basis references
 * Contract Evaluation
 * Report Export
 
----
 
 ### 📝 Contract Risk Highlighting
 
@@ -113,7 +129,6 @@ Provides:
 
 Clause-level risk highlighting directly inside the contract body.
 
----
 
 ### 🔬 Deep Risk Detail Analysis
 
@@ -131,11 +146,9 @@ Each high-risk issue includes:
 * Revision Suggestions
 * Plain Explanation
 
----
 
 ## ✉️ AI Negotiation Strategy Generator
 
----
 
 ### 📞 Phone Script & Multi-Style Strategy
 
@@ -149,7 +162,6 @@ Automatically generates:
 * Structured negotiation talking points
 * Aggressive / Consultative / Compromise styles
 
----
 
 ### 📧 Written Communication Templates
 
@@ -157,13 +169,11 @@ Automatically generates:
   <img src="assets/written-communication-email-template.png" width="900">
 </p>
 
-Produces 500+ word professional negotiation emails grounded in legal reasoning.
+Produces professional negotiation emails grounded in legal reasoning.
 
----
 
 ## 🛠 Contract Revision Engine
 
----
 
 ### 📜 Full Contract Revision
 
@@ -178,11 +188,9 @@ Provides:
 * Inline modification notes
 * Risk-justified adjustments
 
----
 
 ## 📁 User Dashboard & Archive
 
----
 
 ### 🧾 Contract Management System
 
@@ -226,6 +234,51 @@ DeepSeek LLM
    ↓
 Structured JSON Response
 ```
+
+---
+
+## 🧠 Engineering Highlights
+
+### 🔹 Category-Based Vector Partitioning
+
+Legal corpus is partitioned by contract category, reducing noise and improving retrieval precision.
+
+
+### 🔹 Controlled Text Chunking Strategy
+
+- Chunk size: 600
+- Overlap: 60
+- Designed to preserve legal clause integrity
+- Prevent semantic fragmentation
+
+
+### 🔹 Structured JSON Output Enforcement
+
+The LLM is constrained to return structured JSON schema:
+
+- overallRisk
+- riskScore
+- issues[]
+- legalBasis
+- mitigationAdvice
+
+This ensures deterministic integration with the frontend.
+
+
+### 🔹 Multi-Stage Reasoning Pipeline
+
+1. Legal Retrieval (RAG)
+2. Risk Identification
+3. Strategic Negotiation Modeling
+4. Contract Revision Drafting
+
+
+### 🔹 Asynchronous Task Processing
+
+Long-running analysis is executed via task-based architecture:
+
+- `/analyze` creates task
+- `/status/<task_id>` retrieves result
 
 ---
 
@@ -285,6 +338,7 @@ Add:
 
 ```env
 DEEPSEEK_API_KEY=your_api_key_here
+JWT_SECRET=your_secret_here
 ```
 
 ---
@@ -333,8 +387,6 @@ Response:
 }
 ```
 
----
-
 ### GET `/status/<task_id>`
 
 Returns:
@@ -350,6 +402,35 @@ Returns:
 
 ---
 
+## 🔐 Security Design
+
+ContractClarity incorporates secure backend practices:
+
+### 🔹 Authentication
+
+- JWT-based authentication
+- Access & refresh token separation
+- Token expiration enforcement
+
+### 🔹 OTP Protection
+
+- Time-limited verification codes
+- Maximum attempt restrictions
+- Replay prevention
+
+### 🔹 Data Protection
+
+- Environment variable isolation
+- No API keys stored in repository
+- Input validation & sanitization
+
+### 🔹 API Safety
+
+- Task-based execution prevents blocking
+- Structured response format prevents injection
+
+---
+
 ## 🎯 Core Capabilities
 
 ### 🔍 Deep Structural Risk Auditing
@@ -358,7 +439,6 @@ Returns:
 * Missing clause identification
 * Regulatory compliance checks
 
----
 
 ### ⚖️ Law-Grounded Retrieval
 
@@ -366,7 +446,6 @@ Returns:
 * Embedding model: `BAAI/bge-large-zh-v1.5`
 * Similarity-based legal citation
 
----
 
 ### 📊 Quantitative Risk Scoring
 
@@ -376,7 +455,6 @@ Produces:
 * `riskScore`
 * Severity breakdown
 
----
 
 ### 🤝 AI Negotiation Co-Pilot
 
@@ -387,6 +465,13 @@ Generates:
 * Multi-style negotiation pathways
 
 ---
+
+## ⚠️ Limitations
+
+- Depends on external LLM API
+- Legal corpus limited to provided dataset
+- Not a substitute for licensed legal advice
+
 
 ## 🚀 Future Roadmap
 
