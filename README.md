@@ -140,6 +140,9 @@ LLM (Chat Model)
   ↓
 Answer + Cited Legal Articles
 ```
+<p align="center">
+  <img src="assets/System Architecture Diagram.png" width="800">
+</p>
 
 ---
 
