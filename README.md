@@ -91,10 +91,10 @@ The system performs:
 * Quantitative scoring
 
 
-## 🔎 Risk Intelligence Dashboard
+### 🔎 Risk Intelligence Dashboard
 
 
-### 📊 Overall Risk Overview
+#### 📊 Overall Risk Overview
 
 <p align="center">
   <img src="assets/risk-overview-report.png" width="900">
@@ -108,7 +108,7 @@ Provides:
 * Report Export
 
 
-### 📝 Contract Risk Highlighting
+#### 📝 Contract Risk Highlighting
 
 <p align="center">
   <img src="assets/contract-text-with-risk-highlights.png" width="900">
@@ -117,7 +117,7 @@ Provides:
 Clause-level risk highlighting directly inside the contract body.
 
 
-### 🔬 Deep Risk Detail Analysis
+#### 🔬 Deep Risk Detail Analysis
 
 <p align="center">
   <img src="assets/risk-detail-analysis-1.png" width="900">
@@ -137,10 +137,10 @@ Each high-risk issue includes:
 * Plain Explanation
 
 
-## ✉️ AI Negotiation Strategy Generator
+### ✉️ AI Negotiation Strategy Generator
 
 
-### 📞 Phone Script & Multi-Style Strategy
+#### 📞 Phone Script & Multi-Style Strategy
 
 <p align="center">
   <img src="assets/negotiation-strategy-phone-script.png" width="48%">
@@ -153,7 +153,7 @@ Automatically generates:
 * Aggressive / Consultative / Compromise styles
 
 
-### 📧 Written Communication Templates
+#### 📧 Written Communication Templates
 
 <p align="center">
   <img src="assets/written-communication-email-template.png" width="900">
@@ -162,10 +162,10 @@ Automatically generates:
 Produces professional negotiation emails grounded in legal reasoning.
 
 
-## 🛠 Contract Revision Engine
+### 🛠 Contract Revision Engine
 
 
-### 📜 Full Contract Revision
+#### 📜 Full Contract Revision
 
 <p align="center">
   <img src="assets/contract-revision-full-text.png" width="900">
@@ -182,10 +182,10 @@ Provides:
 * Risk-justified adjustments
 
 
-## 📁 User Dashboard & Archive
+### 📁 User Dashboard & Archive
 
 
-### 🧾 Contract Management System
+#### 🧾 Contract Management System
 
 <p align="center">
   <img src="assets/user-dashboard-overview.png" width="48%">
@@ -202,35 +202,11 @@ Includes:
 
 ---
 
-## 🧠 System Architecture
+## 🧠 System Architecture & Engineering Highlights
 
 <p align="center">
   <img src="assets/System Architecture Diagram.png" width="850">
 </p>
-
-### Pipeline Flow
-
-```
-User Input
-   ↓
-Frontend (HTML UI)
-   ↓
-Flask Backend (app.py)
-   ↓
-Category Router
-   ↓
-Chroma Vector DB (Legal Corpus)
-   ↓
-Embedding Model (bge-large-zh-v1.5)
-   ↓
-DeepSeek LLM
-   ↓
-Structured JSON Response
-```
-
----
-
-## 🧠 Engineering Highlights
 
 ### 🔹 Category-Based Vector Partitioning
 
@@ -424,47 +400,11 @@ ContractClarity incorporates secure backend practices:
 
 ---
 
-## 🎯 Core Capabilities
-
-### 🔍 Deep Structural Risk Auditing
-
-* Liability asymmetry detection
-* Missing clause identification
-* Regulatory compliance checks
-
-
-### ⚖️ Law-Grounded Retrieval
-
-* Category-based vector search
-* Embedding model: `BAAI/bge-large-zh-v1.5`
-* Similarity-based legal citation
-
-
-### 📊 Quantitative Risk Scoring
-
-Produces:
-
-* `overallRisk`
-* `riskScore`
-* Severity breakdown
-
-
-### 🤝 AI Negotiation Co-Pilot
-
-Generates:
-
-* Formal legal emails
-* Strategic persuasion scripts
-* Multi-style negotiation pathways
-
----
-
 ## ⚠️ Limitations
 
 - Depends on external LLM API
 - Legal corpus limited to provided dataset
 - Not a substitute for licensed legal advice
-
 
 ## 🚀 Future Roadmap
 
