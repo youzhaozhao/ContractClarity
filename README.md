@@ -35,26 +35,25 @@ This system moves beyond “chatbot-style contract explanation” and delivers s
 
 ---
 
-### 🔐 Authentication & Entry
+### 🔐 Homepage
 
 <p align="center">
-  <img src="assets/contract-review-homepage.png" width="48%">
-  <img src="assets/login-modal-verification-code.png" width="48%">
+  <img src="assets/contract-review-homepage.png" width="900">
 </p>
 
-Users securely access the platform via verification-code login.
-The homepage introduces the AI-powered contract intelligence workflow.
+Users can select the system language, register, log in, and choose the contract type on the homepage.
 
 ---
 
-### 📂 Contract Type Selection
+### 📂🔐 Contract Type Selection & Authentication
 
 <p align="center">
-  <img src="assets/contract-type-selection-english.png" width="48%">
   <img src="assets/contract-type-details-expanded.png" width="48%">
+  <img src="assets/login-modal-verification-code.png" width="48%">
 </p>
 
 Users select the appropriate contract category to activate specialized legal knowledge routing.
+Users can securely access the platform via verification code login or account password login.
 
 ---
 
@@ -64,7 +63,7 @@ Users select the appropriate contract category to activate specialized legal kno
   <img src="assets/contract-upload-page.png" width="900">
 </p>
 
-Supports structured contract upload and text-based submission.
+Supports contract upload (PDF, TXT, DOC, images) and text paste submission.
 
 ---
 
@@ -79,6 +78,8 @@ The system performs:
 * Legal retrieval (RAG)
 * Clause-level semantic parsing
 * Multi-stage risk reasoning
+* Game Discourse Generation
+* Complete Contract Revision
 * Quantitative scoring
 
 ---
@@ -99,6 +100,8 @@ Provides:
 * Risk score (0–100)
 * Core high-risk factors
 * Legal basis references
+* Contract Evaluation
+* Report Export
 
 ---
 
@@ -121,10 +124,12 @@ Clause-level risk highlighting directly inside the contract body.
 
 Each high-risk issue includes:
 
-* Legal interpretation
-* Liability explanation
-* Practical impact
-* Mitigation suggestions
+* Original Statement
+* Legal Basis
+* Problem Analysis
+* Action Strategies
+* Revision Suggestions
+* Plain Explanation
 
 ---
 
@@ -188,6 +193,7 @@ Provides:
 
 Includes:
 
+* User System Settings
 * Historical contract archive
 * Review status tracking
 * Risk score comparison
